@@ -21,6 +21,8 @@ public class Time1Test {
             System.out.printf("Exception: %s%n", e.getMessage());
         }
 
+        displayTime("After exception", time);
+
     }
 
     private static void displayTime(String msg, Time1 time) {
