@@ -17,3 +17,5 @@ Some exercise examples from a Java training course we are implementing at work I
 - Time1Test.java
 - MemberTest.java
 - ThisTest.java
+- Time2.java
+- Time2Test.java
