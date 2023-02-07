@@ -19,3 +19,6 @@ Some exercise examples from a Java training course we are implementing at work I
 - ThisTest.java
 - Time2.java
 - Time2Test.java
+- Date.java
+- Employee.java
+- EmployeeTest.java
