@@ -22,3 +22,5 @@ Some exercise examples from a Java training course we are implementing at work I
 - Date.java
 - Employee.java
 - EmployeeTest.java
+- EnumTest.java
+- Book.java
