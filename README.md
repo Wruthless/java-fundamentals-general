@@ -11,7 +11,7 @@ Some exercise examples from a Java training course we are implementing at work I
 - InitArrayCli.java
 - VarargsTest.java
 
-## Classes
+## Classes & Objects
 
 - Time1.java
 - Time1Test.java
@@ -24,3 +24,9 @@ Some exercise examples from a Java training course we are implementing at work I
 - EmployeeTest.java
 - EnumTest.java
 - Book.java
+- Person.java
+- PersonTest.java
+- StaticImportTest.java
+- PackageDataTest.java
+- Interest.java
+- InterestBD.java
