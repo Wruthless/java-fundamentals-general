@@ -30,3 +30,10 @@ Some exercise examples from a Java training course we are implementing at work I
 - PackageDataTest.java
 - Interest.java
 - InterestBD.java
+
+## Inheritance
+
+- CommissionEmployee.java
+- CommissionEmployeeTest.java
+- BasePlusCommissionEmployee.java
+- BasePlusCommissionEmployeeTest.java
