@@ -37,3 +37,5 @@ Some exercise examples from a Java training course we are implementing at work I
 - CommissionEmployeeTest.java
 - BasePlusCommissionEmployee.java
 - BasePlusCommissionEmployeeTest.java
+- InhBasePlusCommissionEmployee.java
+- InhBasePlusCommissionEmployeeTest.java
