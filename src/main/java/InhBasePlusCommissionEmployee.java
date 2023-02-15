@@ -27,21 +27,23 @@ public class InhBasePlusCommissionEmployee extends CommissionEmployee{
     public double earnings() {
         // not allowed: commissionRate and grossSales private in superclass
         // changed to protected
-        return baseSalary + (commissionRate * grossSales);
+        // return baseSalary + (getCommissionRate() * getGrossSales());
+        return getBaseSalary() + super.earnings();
     }
 
     @Override
     public String toString() {
         // now that fields are protected they are directly accessible
         return "InhBasePlusCommissionEmployee{" +
-            "firstName=" + firstName + " " +
-            "lastName=" + lastName + " " +
-            "commissionRate=" + commissionRate + " " +
-            "ssn=" + socialSecurityNumber + " " +
-            "grossSales=" + grossSales + " " +
-            "baseSalary=" + baseSalary +
+            "firstName=" + getFirstName() + " " +
+            "lastName=" + getLastName() + " " +
+            "commissionRate=" + getCommissionRate() + " " +
+            "ssn=" + getSocialSecurityNumber() + " " +
+            "grossSales=" + getGrossSales() + " " +
+            "baseSalary=" + getBaseSalary() + " " +
+            "earnings=" + earnings() +
             '}';
-    }
+    } // end toString
 
-}
+} // end InhBasePlusCommissionEmployer class
 

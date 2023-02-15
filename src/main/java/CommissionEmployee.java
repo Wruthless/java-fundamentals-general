@@ -1,16 +1,17 @@
-public class CommissionEmployee extends Object {
+//public class CommissionEmployee extends Object {
+public class CommissionEmployee {
 
-//    private final String firstName;
-//    private final String lastName;
-//    private final String socialSecurityNumber;
-//    private double grossSales;
-//    private double commissionRate;
+    private final String firstName;
+    private final String lastName;
+    private final String socialSecurityNumber;
+    private double grossSales;
+    private double commissionRate;
 
-    protected final String firstName;
-    protected final String lastName;
-    protected final String socialSecurityNumber;
-    protected double grossSales;
-    protected double commissionRate;
+//    protected final String firstName;
+//    protected final String lastName;
+//    protected final String socialSecurityNumber;
+//    protected double grossSales;
+//    protected double commissionRate;
 
     public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate) {
         // implicit call to Object's default constructor
@@ -68,17 +69,17 @@ public class CommissionEmployee extends Object {
     }
 
     public double earnings() {
-        return commissionRate * grossSales;
+        return getCommissionRate() * getGrossSales();
     }
 
     @Override // indicates that this method overrides a superclass method
     public String toString() {
         return "CommissionEmployee{" +
-            "firstName='" + firstName + '\'' +
-            ", lastName='" + lastName + '\'' +
-            ", socialSecurityNumber='" + socialSecurityNumber + '\'' +
-            ", grossSales=" + grossSales +
-            ", commissionRate=" + commissionRate +
+            "firstName='" + getFirstName() + '\'' +
+            ", lastName='" + getLastName() + '\'' +
+            ", socialSecurityNumber='" + getSocialSecurityNumber() + '\'' +
+            ", grossSales=" + getGrossSales() +
+            ", commissionRate=" + getCommissionRate() +
             '}';
     }
 
