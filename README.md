@@ -39,3 +39,7 @@ Some exercise examples from a Java training course we are implementing at work I
 - BasePlusCommissionEmployeeTest.java
 - InhBasePlusCommissionEmployee.java
 - InhBasePlusCommissionEmployeeTest.java
+
+## Polymorphism
+
+- PolymorphismTest.java
