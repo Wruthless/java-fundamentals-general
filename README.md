@@ -44,3 +44,6 @@ Some exercise examples from a Java training course we are implementing at work I
 
 - PolymorphismTest.java
 - poly/Employee.java
+- poly/SalariedEmployee.java
+- poly/HourEmployee.java
+- poly/CommissionEmployee.java
