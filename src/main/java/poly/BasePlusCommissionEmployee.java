@@ -7,7 +7,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee{
     public BasePlusCommissionEmployee(String firstName, String lastName, String ssn,
                                       double grossSales, double commissionRate, double baseSalary) {
 
-        // CommissionEmployee constructor
+        // CommissionEmployee constructor called
         super(firstName, lastName, ssn, grossSales, commissionRate);
         this.baseSalary = baseSalary;
     }

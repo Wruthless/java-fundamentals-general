@@ -47,3 +47,4 @@ Some exercise examples from a Java training course we are implementing at work I
 - poly/SalariedEmployee.java
 - poly/HourEmployee.java
 - poly/CommissionEmployee.java
+- poly/BasePlusCommissionEmployee.java
