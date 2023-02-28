@@ -41,16 +41,16 @@ public class Invoice implements Payable {
 
     @Override
     public String toString() {
-        return "Invoice{" +
-            "partDescription='" + partDescription + '\'' +
-            ", partNumber='" + partNumber + '\'' +
-            ", quantity=" + quantity +
-            ", pricePerItem=" + pricePerItem +
+        return "Invoice { " +
+            "partDescription = '" + partDescription + ' ' +
+            ", partNumber = '" + partNumber + ' ' +
+            ", quantity = " + quantity + " " +
+            ", pricePerItem = " + pricePerItem + " " +
             '}';
     }
 
     @Override
     public double getPaymentAmount() {
-        return getQuantity() + getPricePerItem();
+        return getQuantity() * getPricePerItem();
     }
 }

@@ -14,10 +14,10 @@ public class PayableInterfaceTest {
         payableObject[3] = new SalariedEmployee("Lisa", "Barnes", "222-22-2222", 1200.00);
 
 
-        System.out.printf("Invoices and Employees processed polymorphically: ");
+        System.out.printf("Invoices and Employees processed polymorphically:%n ");
 
         for (Payable currentPayable : payableObject) {
-            System.out.printf("%s%n%s%f", currentPayable.toString(), "payment due: ", currentPayable.getPaymentAmount());
+            System.out.printf("%n%s %n%s: %12f%n", currentPayable.toString(), "payment due: ", currentPayable.getPaymentAmount());
         }
     }
 

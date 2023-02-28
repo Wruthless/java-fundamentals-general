@@ -27,9 +27,9 @@ public class SalariedEmployee extends Employee {
     // than what is inherited from the super class.
     @Override
     public String toString() {
-        return "SalariedEmployee{" +
-            "super=" + super.toString() + " " +
-            "weeklySalary=" + getWeeklySalary() +
+        return "SalariedEmployee { " +
+            "super = " + super.toString() + " " +
+            "weeklySalary = " + getWeeklySalary() +
             '}';
     }
 

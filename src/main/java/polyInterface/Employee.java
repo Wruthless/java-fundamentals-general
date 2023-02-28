@@ -32,10 +32,10 @@ private final String firstName;
 
     @Override
     public String toString() {
-        return "Employee{" +
-            "firstName='" + getFirstName() + '\'' +
-            ", lastName='" + getLastName() + '\'' +
-            ", ssn='" + getSsn() + '\'' +
+        return "Employee { " +
+            "firstName='" + getFirstName() + ' ' +
+            ", lastName='" + getLastName() + ' ' +
+            ", ssn='" + getSsn() + ' ' +
             '}';
     }
 
