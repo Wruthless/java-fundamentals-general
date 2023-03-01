@@ -57,3 +57,7 @@ Some exercise examples from a Java training course we are implementing at work I
 - polyInterface/Payable.java
 - polyInterface/PayableInterfaceTest.java
 - polyInterface/SalariedEmployee.java
+
+## Collection Framework
+
+- colls/CollectionTest.java
