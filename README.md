@@ -61,3 +61,4 @@ Some exercise examples from a Java training course we are implementing at work I
 ## Collection Framework
 
 - colls/CollectionTest.java
+- colls/ListTest.java

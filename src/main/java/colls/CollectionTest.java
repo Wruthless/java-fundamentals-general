@@ -2,6 +2,7 @@ package colls;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 public class CollectionTest {
@@ -25,21 +26,29 @@ public class CollectionTest {
         System.out.printf("%n%s%n%n", "ArrayList:");
 
         for (int count = 0; count < list.size(); count++) {
-            System.out.printf("%s ", list.get(count));
+            System.out.printf("%s   %n", list.get(count));
         }
 
         // remove from list the colors contained in removeList
         removeColors(list, removeList);
 
         // output list contents
-        System.out.printf("%n%nArrayList after calling removeColors: %n");
+        System.out.printf("%n%nArrayList after calling removeColors: %n%n");
 
         for (String color: list) {
-            System.out.printf("%s   ", color);
+            System.out.printf("%s   %n", color);
         }
     }
 
     private static void removeColors(Collection<String> collection1, Collection<String> collection2) {
 
+        // get Iterator
+        Iterator<String> iterator = collection1.iterator();
+
+        while(iterator.hasNext()) {
+            if(collection2.contains(iterator.next())) {
+                iterator.remove();
+            }
+        }
     }
 }
