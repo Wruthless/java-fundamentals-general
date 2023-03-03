@@ -62,3 +62,4 @@ Some exercise examples from a Java training course we are implementing at work I
 
 - colls/CollectionTest.java
 - colls/ListTest.java
+- colls/UsingToArray.java
