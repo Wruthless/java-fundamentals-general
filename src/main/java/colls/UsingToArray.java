@@ -19,6 +19,10 @@ public class UsingToArray {
         colors = links.toArray(new String[links.size()]);
 
         System.out.println("colors: ");
+
+        for (String color: colors) {
+            System.out.printf("%s ", color);
+        }
     }
 }
 
