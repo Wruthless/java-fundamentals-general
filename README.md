@@ -69,3 +69,5 @@ Some exercise examples from a Java training course we are implementing at work I
 - colls/TimeComparator.java
 - colls/Time2.java
 - colls/DeckOfCards.java
+- colls/Algorithms1.java
+- colls/BinarySearchTest.java
