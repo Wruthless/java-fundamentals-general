@@ -71,3 +71,4 @@ Some exercise examples from a Java training course we are implementing at work I
 - colls/DeckOfCards.java
 - colls/Algorithms1.java
 - colls/BinarySearchTest.java
+- colls/Algorithms2.java

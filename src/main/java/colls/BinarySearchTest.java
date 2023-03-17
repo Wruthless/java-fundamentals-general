@@ -17,8 +17,22 @@ public class BinarySearchTest {
 
         printSearchResults(list, "black");
         printSearchResults(list, "red");
+        printSearchResults(list, "pink");
+        printSearchResults(list, "aqua");
+        printSearchResults(list, "gray");
+        printSearchResults(list, "teal");
     }
 
-    private static void printSearchResults(List<String> list, String black) {
+    private static void printSearchResults(List<String> list, String key) {
+        int result = 0;
+
+        System.out.printf("Searching for: %s%n", key);
+        result = Collections.binarySearch(list, key);
+
+        if (result >= 0) {
+            System.out.printf("[+] Found at index %d%n", result);
+        } else {
+            System.out.printf("[-] Not Found(%d)%n", result);
+        }
     }
 }
