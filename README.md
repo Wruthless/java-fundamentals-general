@@ -72,3 +72,4 @@ Some exercise examples from a Java training course we are implementing at work I
 - colls/Algorithms1.java
 - colls/BinarySearchTest.java
 - colls/Algorithms2.java
+- colls/SetTest.java

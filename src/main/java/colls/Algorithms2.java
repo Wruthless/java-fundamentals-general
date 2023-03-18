@@ -35,5 +35,9 @@ public class Algorithms2 {
         System.out.printf("%n • Frequency of red in list2: %d%n", frequency);
 
 
+        // check if list1 and list2 have elements in common
+        boolean disjoint = Collections.disjoint(list1, list2);
+
+        System.out.printf("%nlist1 and list 2 %s elements in common%n", disjoint ? "do not have" : "have");
     }
 }
