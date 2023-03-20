@@ -74,3 +74,4 @@ Some exercise examples from a Java training course we are implementing at work I
 - colls/Algorithms2.java
 - colls/SetTest.java
 - colls/SortedSetTest.java
+- colls/WordTypeCount.java
