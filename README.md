@@ -75,3 +75,6 @@ Some exercise examples from a Java training course we are implementing at work I
 - colls/SetTest.java
 - colls/SortedSetTest.java
 - colls/WordTypeCount.java
+
+## Lambdas and Streams
+- lambdasStreams/IntStreamOperations.java
