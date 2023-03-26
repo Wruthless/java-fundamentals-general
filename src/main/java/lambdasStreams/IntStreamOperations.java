@@ -24,7 +24,5 @@ public class IntStreamOperations {
         // Summation
         System.out.printf("%nSum: %d%n", IntStream.of(values).sum());
 
-
-
     }
 }
