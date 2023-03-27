@@ -1,5 +1,6 @@
 package lambdasStreams;
 
+import java.util.function.DoubleFunction;
 import java.util.stream.IntStream;
 
 public class InStreamTerminalOperations {
@@ -34,5 +35,21 @@ public class InStreamTerminalOperations {
 
         // average
         System.out.printf("%nAvg: %.2f%n", IntStream.of(values).average().getAsDouble());
+
+        /**
+         * Terminal Operation reduce().
+         */
+
+        // sum() equivalent with reduce.
+        System.out.printf("%nSum via reduce: %d%n",
+            IntStream.of(values).reduce(0, (x, y) -> x + y));
+
+        // sum of squares of values with reduce.
+        System.out.printf("%nSum of squares via reduce: %d%n",
+            IntStream.of(values).reduce(0, (x, y) -> x + y * y));
+
+        // produce of values with reduce
+        System.out.printf("%nProduct of values via reduce: %d%n",
+            IntStream.of(values).reduce(1, (x, y) -> x * y));
     }
 }
