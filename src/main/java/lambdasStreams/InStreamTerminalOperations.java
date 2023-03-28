@@ -51,5 +51,31 @@ public class InStreamTerminalOperations {
         // produce of values with reduce
         System.out.printf("%nProduct of values via reduce: %d%n",
             IntStream.of(values).reduce(1, (x, y) -> x * y));
+
+        // even values displayed in sorted order
+        System.out.printf("%nSorted even values: ");
+        IntStream.of(values)
+            .filter(value -> value % 2 == 0)
+            .sorted()
+            .forEach(value -> System.out.printf("%d ", value));
+        System.out.println();
+
+        // even values displayed in sorted order
+        System.out.printf("%nSorted odd values multiplied by 10: ");
+        IntStream.of(values)
+            .filter(value -> value % 2 !=  0)
+            .map(value -> value * 10)
+            .sorted()
+            .forEach(value -> System.out.printf("%d ", value));
+        System.out.println();
+
+        // sum range from 1 to 10 exclusive
+        System.out.printf("%nSum of integers from 1 to 9: %d%n",
+        IntStream.range(1,10).sum());
+
+        // sum range of integers from 1 to 10 inclusive
+        System.out.printf("%nSum of integers from 1 to 10: %d%n",
+        IntStream.rangeClosed(1,10).sum());
+
     }
 }
