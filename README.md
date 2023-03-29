@@ -79,3 +79,4 @@ Some exercise examples from a Java training course we are implementing at work I
 ## Lambdas and Streams
 - lambdasStreams/IntStreamOperations.java
 - lambdasStreams/IntStreamTerminalOperations.java
+- lamdbasStream/ArraysAndStreams.java
