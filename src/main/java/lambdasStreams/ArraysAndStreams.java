@@ -27,9 +27,14 @@ public class ArraysAndStreams {
         List<Integer> greaterThan4 =
             Arrays.stream(values)
                 .filter(value -> value > 4)
-                .sorted()
                 .collect(Collectors.toList());
         System.out.printf("Values greater than 4: %s%n", greaterThan4);
 
+        // greaterThan4 List sorted with streams instead of Arrays.stream()
+        System.out.printf(
+            "Values greater than 4 (sorted asc w/streams): %s%n",
+            greaterThan4.stream()
+                .sorted()
+                .collect(Collectors.toList()));
     }
 }
