@@ -79,5 +79,7 @@ Some exercise examples from a Java training course we are implementing at work I
 ## Lambdas and Streams
 - lambdasStreams/IntStreamOperations.java
 - lambdasStreams/IntStreamTerminalOperations.java
-- lamdbasStream/ArraysAndStreams.java
-- lamdbasStream/ArraysAndStreams2.java
+- lambdasStreams/ArraysAndStreams.java
+- lambdasStreams/ArraysAndStreams2.java
+- lambdasStreams/Employee.java
+- lambdasStreams/ProcessingEmployees.java

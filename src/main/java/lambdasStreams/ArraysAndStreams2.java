@@ -20,7 +20,7 @@ public class ArraysAndStreams2 {
         System.out.printf("%ncolors greater than m sorted asc: %s%n",
             Arrays.stream(colors)
                 .filter(c -> c.compareToIgnoreCase("m") >0 )
-                .sorted(String.CASE_INSENSITIVE_ORDER)
+                .sorted(String.CASE_INSENSITIVE_ORDER) // comparator
                 .collect(Collectors.toList()));
 
         // strings greater than "m" sorted in desck order
