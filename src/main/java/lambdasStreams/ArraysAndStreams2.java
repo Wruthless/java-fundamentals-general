@@ -22,5 +22,12 @@ public class ArraysAndStreams2 {
                 .filter(c -> c.compareToIgnoreCase("m") >0 )
                 .sorted(String.CASE_INSENSITIVE_ORDER)
                 .collect(Collectors.toList()));
+
+        // strings greater than "m" sorted in desck order
+        System.out.printf("%ncolors greater than m sroted desc: %s%n",
+            Arrays.stream(colors)
+                .filter(c -> c.compareToIgnoreCase("m") > 0)
+                .sorted(String.CASE_INSENSITIVE_ORDER.reversed())
+                .collect(Collectors.toList()));
     }
 }
