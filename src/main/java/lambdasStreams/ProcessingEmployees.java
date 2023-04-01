@@ -3,6 +3,7 @@ package lambdasStreams;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class ProcessingEmployees {
@@ -34,5 +35,18 @@ public class ProcessingEmployees {
             .filter(fourToSixThousand)
             .sorted(Comparator.comparing(Employee::getSalary))
             .forEach(System.out::println);
+
+
+        // Display first Employee with a salary between $4-6k
+        System.out.printf("%nFirst employee who earns between $4-6k: %n%s%n",
+            list.stream()
+                .filter(fourToSixThousand)
+                .findFirst()
+                .get());
+
+        // Get first and last name
+        Function<Employee, String> byFirstName = Employee::getFirstName;
+        Function<Employee, String> byLastName = Employee::getLastName;
+
     }
 }
