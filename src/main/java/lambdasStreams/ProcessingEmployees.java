@@ -48,5 +48,20 @@ public class ProcessingEmployees {
         Function<Employee, String> byFirstName = Employee::getFirstName;
         Function<Employee, String> byLastName = Employee::getLastName;
 
+        // Comparator for comparing Employees by first and then last name
+        Comparator<Employee> lastThenFirst = Comparator.comparing(byLastName).thenComparing(byFirstName);
+
+        // sort by last then first name
+        System.out.printf("%nEmployee in asc order by last then first name: %n");
+            list.stream()
+                .sorted(lastThenFirst)
+                .forEach(System.out::println);
+
+        System.out.printf("%nEmployees in desc order by last then first name: %n");
+        list.stream()
+            .sorted(lastThenFirst.reversed())
+            .forEach(System.out::println);
+
+
     }
 }
