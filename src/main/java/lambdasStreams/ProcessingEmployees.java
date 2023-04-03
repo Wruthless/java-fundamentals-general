@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class ProcessingEmployees {
 
@@ -62,6 +63,20 @@ public class ProcessingEmployees {
             .sorted(lastThenFirst.reversed())
             .forEach(System.out::println);
 
+        // unique employees sorted by last name
+        System.out.printf("%nUnique employees by last name: %n");
+        list.stream()
+            .map(Employee::getLastName)
+            .distinct()
+            .sorted()
+            .forEach(System.out::println);
+
+        // display first and last
+        System.out.printf("%nEmployee names in order by last then first name: %n");
+        list.stream()
+            .sorted(lastThenFirst)
+            .map(Employee::getName)
+            .forEach(System.out::println);
 
     }
 }
