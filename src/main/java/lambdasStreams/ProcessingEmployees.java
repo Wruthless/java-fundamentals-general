@@ -72,5 +72,18 @@ public class ProcessingEmployees {
             list.stream().collect(Collectors.groupingBy(Employee::getDepartment, TreeMap::new, Collectors.counting()));
 
         employeeCountByDepartment.forEach(( department, count) -> System.out.printf("%s has %d employee(s)%n", department, count));
+
+        // sum of Employee salaries
+        System.out.printf("%nSum of Employees' salaries: %.2f%n",
+            list.stream()
+                .mapToDouble(Employee::getSalary)
+                .sum());
+
+        // Sum of Employee salaries using Stream reduce
+        System.out.printf("%nSum of Employees' salaries using reduce: %.2f%n",
+            list.stream()
+                .mapToDouble(Employee::getSalary)
+                .reduce(0, (value1, value2) -> value1 + value2));
+
     }
 }
