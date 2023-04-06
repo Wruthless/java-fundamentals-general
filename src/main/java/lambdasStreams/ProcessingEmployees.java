@@ -71,7 +71,8 @@ public class ProcessingEmployees {
         Map<String, Long> employeeCountByDepartment =
             list.stream().collect(Collectors.groupingBy(Employee::getDepartment, TreeMap::new, Collectors.counting()));
 
-        employeeCountByDepartment.forEach(( department, count) -> System.out.printf("%s has %d employee(s)%n", department, count));
+        employeeCountByDepartment.forEach(( department, count) ->
+            System.out.printf("%s has %d employee(s)%n", department, count));
 
         // sum of Employee salaries
         System.out.printf("%nSum of Employees' salaries: %.2f%n",
@@ -84,6 +85,13 @@ public class ProcessingEmployees {
             list.stream()
                 .mapToDouble(Employee::getSalary)
                 .reduce(0, (value1, value2) -> value1 + value2));
+
+        // avg the salaries
+        System.out.printf("%nAvg. of Employee salaries: %.2f%n",
+            list.stream()
+                .mapToDouble(Employee::getSalary)
+                .average()
+                .getAsDouble());
 
     }
 }
