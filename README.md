@@ -84,3 +84,4 @@ Some exercise examples from a Java training course we are implementing at work I
 - lambdasStreams/Employee.java
 - lambdasStreams/ProcessingEmployees.java
 - lambdasStreams/StreamOfLines.java
+- resources/Paragraph.txt
