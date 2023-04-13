@@ -86,3 +86,6 @@ Some exercise examples from a Java training course we are implementing at work I
 - lambdasStreams/StreamOfLines.java
 - resources/Paragraph.txt
 - lambdasStreams/RandomIntStream.java
+
+## Generic Methods and Classes
+- genericClassesMethods/OverloadedMethods.java
