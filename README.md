@@ -90,3 +90,4 @@ Some exercise examples from a Java training course we are implementing at work I
 ## Generic Methods and Classes
 - genericClassesMethods/OverloadedMethods.java
 - genericClassesMethods/GenericMethodTest.java
+- genericClassesMethods/Maximum.java
