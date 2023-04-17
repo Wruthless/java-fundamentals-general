@@ -7,11 +7,11 @@ public class Maximum {
 
     public static void main(String[] args) {
 
-        System.out.printf("Max of %d, %d and %d: %d%n%n", 3, 4, 5, maximum(3, 4, 5));
+        System.out.printf("Max of %d, %d and %d: %n %d%n%n", 3, 4, 5, maximum(3, 4, 5));
 
-        System.out.printf("Max of %.1f, %.1f and %.1f%n%n", 6.6, 8.8, 7.7, maximum(6.6, 8.8, 7.8));
+        System.out.printf("Max of %.1f, %.1f and %.1f: %n %.1f%n%n", 6.6, 8.8, 7.7, maximum(6.6, 8.8, 7.8));
 
-        System.out.printf("Max of %s, %s and %s%n%n", "pear", "apple", "orange", maximum("pear", "apple", "orange"));
+        System.out.printf("Max of %s, %s and %s: %n %s%n%n", "pear", "apple", "orange", maximum("pear", "apple", "orange"));
 
     } // end main ()
 
@@ -22,11 +22,16 @@ public class Maximum {
         T max = x;
 
         if( y.compareTo(max) > 0 ) {
-            max = y;
+            max = y; // y is largest.
+        }
+
+        if ( z.compareTo(max) > 0 ) {
+            max = z; // z is largest.
         }
 
         return max;
 
-    }
+    } // end maximum ()
+
 
 } // end Maximum {}
