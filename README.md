@@ -91,3 +91,6 @@ Some exercise examples from a Java training course we are implementing at work I
 - genericClassesMethods/OverloadedMethods.java
 - genericClassesMethods/GenericMethodTest.java
 - genericClassesMethods/Maximum.java
+- genericClassesMethods/Stack.java
+- genericClassesMethods/StackTest.java
+- genericClassesMethods/EmptyStackException.java
