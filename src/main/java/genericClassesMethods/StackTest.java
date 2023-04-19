@@ -9,7 +9,7 @@ public class StackTest {
 
         // Stack<Double> and Stack<Integer>
         Stack<Double> doubleStack = new Stack<>(5);
-        Stack<Integer> integerStack = new Stack<>();
+        Stack<Integer> integerStack = new Stack<>(elements);
 
         // Push elements of doubleElements onto doubleStack
         testPushDouble(doubleStack, doubleElements);
