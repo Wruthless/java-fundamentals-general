@@ -34,7 +34,7 @@ public class Stack<T> {
     public T pop() {
 
         if(elements.isEmpty()) {
-            throw new EmptyStackException("Stack is empty, cannot pop.");
+            throw new EmptyStackException();
         }
 
         // Remove and return top element of stack.
