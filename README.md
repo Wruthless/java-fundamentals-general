@@ -94,3 +94,5 @@ Some exercise examples from a Java training course we are implementing at work I
 - genericClassesMethods/Stack.java
 - genericClassesMethods/StackTest.java
 - genericClassesMethods/EmptyStackException.java
+- genericClassesMethods/TotalNumbers.java
+- genericClassesMethods/Wildcard.java
